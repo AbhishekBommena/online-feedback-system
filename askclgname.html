@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myModal{
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    overflow: auto;
+    
+}
+.modal-content{
+  box-shadow:2px 2px  5px #4e7979;
+  padding-bottom: 40px;
+  position: relative;
+  width: 60%;
+  margin:auto;
+  background-color: #F0FFFF;
+}
+
+.modal-header{
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.modal-header span{
+  color: #000000;
+  float:right;
+  font-size: 28px;
+  font-weight:bold;
+  cursor: pointer;
+}
+.modal-body{
+  position: relative;
+  left: 10%;
+  margin-bottom: 30px;
+}
+.modal-body label{
+  
+  position:absolute;
+  top:0px;
+	left:0px;
+	font-size:17px;
+	color:#000000;	
+	transition: all 0.5s ease-in-out;
+  
+}
+.modal-body input[type=text]{
+  border:0;
+  border-bottom:1px solid #000000;  
+  background:transparent;
+  border-radius: 4px;
+  width:78%;
+  height: 28px;
+  padding:8px 0 5px 1%;
+  font-size:16px;
+  color:black;
+  
+}
+
+.modal-body input[type=text]:focus{ 
+ border:none;	
+ outline:none;
+ 
+ background-color: #F0FFFF;
+ box-shadow:2px 2px 8px #5cb85c;
+}
+.modal-body input[type=text]:focus ~ label{
+	top:-14px;
+	font-size:12px;
+	
+
+}
+.modal-btn{
+  text-align: center;
+}
+.registerbtn{
+  border: none;
+  outline: none;
+  background-color:#2f4f4f;
+  color: white;
+  padding: 12px 40px 12px 40px ;
+  font-size: 16px;
+ 
+  cursor: pointer;
+}
+.registerbtn:hover{
+  box-shadow:2px 2px 10px #3CB371;
+}
+</style>
+</head>
+<body>
+    <h1>hello</h1>
+    <button id="myBtn">ABHISHEK</button>
+    <div id="myModal">
+
+      <div class="modal-content">
+        
+        <div class="modal-header">
+          <span class="close">&times;</span>
+        </div>
+       
+        <div class="modal-body">
+          <input type="text" name="college-name">
+          <label>College Name</label>
+        </div>
+
+        <div class="modal-btn">
+          <input type="button" name="registerbtn" value="Register" class="registerbtn">
+        </div>
+
+      </div>
+    
+    </div>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

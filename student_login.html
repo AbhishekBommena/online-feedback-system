@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Student Login - Feedback</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="student_login.css">
+		<script src="https://kit.fontawesome.com/8a3ba5736f.js" crossorigin="anonymous"></script>
+		<base target="_self">
+	</head>
+	<body>
+		<div class="container"><i class="fas fa-user-lock" id="icon"></i>
+			<form  action="stu_login_vali.php" method="POST">
+				<div class="f1">
+					<i class="fa fa-envelope" id="message_icon"></i>
+					<input type="email" name="un1" placeholder="Email ID ..." class="field" required><br>
+				</div>
+				<div class="f1">
+					<i class="fa fa-key icon" id="key_icon"></i>
+					 
+					<input type="password" name="pwd1" placeholder="Password ..." class="field" id="inp1" required>
+					
+					<a href="javascript:void(0);"  onclick="myFunction()"><i class="fas fa-eye" id="icon2"></i></a>
+					<a href="javascript:void(0);"  onclick="myFunction()"><i class="fas fa-eye-slash" id="icon3"></i></a><br>
+					<a href="resetmail.php"  id="forgot_pwd"><b>Forgot Password ?</b></a><br>
+				</div>
+				<!--<a href="register.html" class="register">Register</a><br>
+				<div class="line">if not registered ?</div>-->
+				<input type="submit"  value="Login" class="login_button" id="myBtn" >
+			</form>
+		</div>
+		
+		<script>
+			function myFunction(){
+			var z=document.getElementById("icon2");
+			var y=document.getElementById("icon3");
+			var x=document.getElementById("inp1");
+			if(x.type==="password"){
+			x.type="text";
+			y.style.display="none";
+			z.style.display="inline";
+			}
+			else{
+			x.type="password";
+			y.style.display="inline";
+			z.style.display="none";
+			}
+			}
+		</script>
+	</body>
+</html>

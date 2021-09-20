@@ -1,0 +1,348 @@
+body{
+	font-family:"Times New Roman", Times, serif;
+}
+.heading{
+	background-color:coral;
+	color:#fff;
+	height:70px;
+}
+h1{
+	padding-top:10px;
+	padding-left:30px;
+}
+.topnav{
+	display:none;
+}
+@media screen and (max-width: 900px) {
+.topnav {
+	display:block;
+	overflow: hidden;
+	background-color: #333;
+	margin-top:2px;
+	width:100%;
+}
+
+.topnav a {
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 19px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+  background-color: #4cadaf;
+  color: white;
+}
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float:right;
+    display: block;
+	height:21.5px;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.logout {
+	float:right;
+	margin-right:18px;
+	margin-top:10px;
+}
+.logout a{
+	font-weight:normal;
+	text-decoration:none;
+	font-size:22px;
+	color:white;
+	background:rgb(51,51,51,0.2);
+	padding:7px 10px 10px 10px;
+}
+.logout a:hover{
+	background-color:#ddd;
+	color:black;
+}
+.sidenav{
+	height:360px;
+	width:15%;
+	background-color: #333;
+    margin-top:5px;
+	position:absolute;
+}
+.sidenav a {
+	padding: 10px 8px 10px 16px;
+	text-decoration: none;
+	font-size: 22px;
+	color:white;
+	display: block;
+}
+.sidenav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.sidenav a.active {
+	background-color: #4cadaf;
+	color: white;
+}
+@media screen and (max-width:900px) {
+	.sidenav {
+		display:none;
+	}
+}
+.container{
+	margin-bottom:5px;
+	position:relative;
+	margin-top:-20px;
+	margin-left:16%;
+	background:#f1f1f1;
+	height:80vh;
+}
+.first-row {
+	color:white;
+}
+.myform{	
+	margin-left:16%;
+	margin-top:5px;
+	background:#333;
+	padding:0.5em 1em 0.5em 1em;
+}
+.form-content1{
+	width:100%;
+	
+}
+.form-content1 td{
+	width:5.8em;
+	padding:0.5em 0 0 0;
+}
+.form-content1 tr{
+	display:inline;
+}
+.myform label{
+	color:#f1f1f1;
+}
+#space{
+	margin-right:5%;
+}
+.submit-btn{
+	margin-left:10px;
+	padding:0.1em 0.5em  ;
+	font-size:18px;
+	font-family:serif;
+	background-color:#ddd;
+	color:black;
+	border:none;
+	cursor:pointer;
+}
+.submit-btn:hover{
+	opacity:0.9;
+}
+.form-content1 input[type=text]{
+	display:none;
+	width:40px;
+	background-color:#333;
+	border:none;
+	color:white;
+	outline:none;
+	border-bottom:1px solid white;
+	font-size:14px;
+}
+/*checkbox creation*/
+.container2 {
+	display: inline;
+	position: relative;
+	padding-left: 30px;
+	margin:0px 3px 12px 0px;
+	cursor: pointer;
+	font-size: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+/* Hide the browser's default checkbox */
+.container2 input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container2:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container2 input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container2 input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container2 .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+footer{
+	padding:0.2em 0 0.2em 0;
+	width: 100%;
+	background-color:#333;
+	color: white;
+}
+p{
+	padding-left:1em;
+}
+.social_icons {
+	margin-top:-45px;
+	float:right;
+	margin-right:30px;
+}
+.social_icons a{
+	margin-left:15px;
+	font-size:28px;
+	color:white;
+	
+}
+.twitter:hover{
+	color:#1DA1F2;
+}
+
+.insta:hover{
+	color: transparent;
+  background: -webkit-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+.social_icons i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width:1250px){
+	.form-content1 td{
+		width:4em;
+	}
+	.form-content1 input[type=text]{
+		margin-left:21px;
+		margin-top:5px;
+	}
+}
+@media screen and (max-width:900px){
+	.container{
+		margin-left:0;
+		width:100%;
+	}
+	.myform{
+		padding:0.5em;
+		margin-left:0;
+	}
+}
+@media screen and (max-width:730px){
+	.form-content1 tr{
+		display:block;
+	}
+	.form-content1 td{
+		width:6em;
+	}
+	.form-content1 input[type=text]{
+		margin-left:0px;
+		margin-top:5px;
+	}
+	.submit-btn{
+		margin-top:-170px;
+	}
+	
+}
+@media screen and (max-width:600px){	
+	.social_icons {
+		float:none;
+		text-align:center;
+		margin-top:0;
+	}
+	footer{
+		padding:1em 0 1em 0;
+		text-align:center;
+	}
+	.form-content1 td{
+		width:4em;
+	}
+	.form-content1 input[type=text]{
+		margin-left:21px;
+		margin-top:5px;
+	}
+	
+}
+@media screen and (max-width:390px){
+	.myform{
+		overflow-x:auto;
+	}
+	.form-content1{
+		width:350px;
+	}
+	.logout{
+		margin-right:10px;
+	}
+	.logout a{
+		font-size:16px;
+	}
+	h1{
+		font-size:30px;
+		padding-top:18px;
+		padding-left:10px;
+	}
+	p{
+		padding-left:0em;
+	}
+}
+@media screen and (min-height:1500px){
+	footer{
+		padding:1em 0 1em 0;
+	}
+}

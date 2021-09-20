@@ -1,0 +1,148 @@
+body{
+	/*background-image: url(i3.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+*/
+	background-color:rgb(143, 188, 143);
+}
+.container{
+	text-align:center;
+	border-radius:4px;
+	margin-top:130px;
+	width:40%;
+	height:530px;
+	margin-left:30%;
+	background: rgb(221,221,221,0.4);
+	
+}
+#icon{
+	font-size:155px;
+	padding-top:10%;
+	padding-bottom:30px;
+}
+.field{
+	margin-bottom:20px;
+	padding-left:40px;
+	width:90%;
+	height:40px;
+	font-size:18px;	
+}
+::placeholder{
+	font-family:serif;
+	font-size:20px;
+	
+}
+#forgot_pwd{
+	float:left;
+	margin-left:30px;
+	font-size:18px;
+	color:black;
+	margin-top:-8px;
+	cursor:pointer;
+}
+#forgot_pwd:hover{
+	color:red;
+}
+.login_button{
+	border:none;
+	border-radius:5px;
+	background-color: black;
+	color:white;
+	font-size:22px;
+    cursor:pointer;
+	width:120px;
+	height:40px;
+	margin-top:10%;
+	font-family:serif;
+	opacity:0.9;
+}
+.login_button:hover{
+	opacity:1;
+}
+.register{
+	border:none;
+	border-radius:5px;
+	background-color: black;
+	color:white;
+	font-size:22px;
+    cursor:pointer;
+	width:120px;
+	height:30px;
+	margin-top:40px;
+	font-family:serif;
+	float:left;
+	margin-left:35px;
+	text-decoration:none;
+	padding-top:6px;
+	padding-bottom:4px;
+}
+.register:hover{
+	background-color:#DAA520;
+	color:black;
+}
+.line{
+	font-size:15px;
+	float :left;
+	margin-top:60px;
+	margin-left:-110px;
+	color:rgb(222, 0, 0);
+}
+#message_icon,#key_icon{
+	margin-top:10px;
+	margin-left:10px;
+	font-size:19px;
+	color:black;
+	position:absolute;	
+}
+#icon2{
+	display:none;
+}
+#icon2,#icon3{
+	font-size:16px;
+	position:absolute;	
+	margin-left:-30px;
+	color:black;
+	opacity:0.9;
+	margin-top:10px;
+}
+#icon2:hover,#icon3:hover{
+	opacity:1;
+}
+@media screen and  (max-width:900px){
+	.container{
+		width:80%;
+		margin-left:10%;
+		margin-right:0;
+		
+	}
+	/*body{
+		background-size:cover;
+		background-position:center;
+	}*/
+	#icon{
+		font-size:140px;
+		padding-top:50px;
+	}
+	
+	#forgot_pwd{
+		margin-left:40px;
+	}
+	
+}
+@media screen and (max-height:700px){
+	.container{
+		margin-top:50px;
+	}
+}
+@media screen and  (max-width:600px){
+	#forgot_pwd{
+		margin-left:30px;
+	}
+	
+}
+@media screen and (max-width:450px){
+	.container{
+		width:100%;
+		margin-left:0;
+	}
+}

@@ -1,0 +1,56 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/8a3ba5736f.js" crossorigin="anonymous"></script>
+		<base target="_self">
+		</head>
+<style>/* The alert message box */
+
+.alert {
+		position:absolute;
+		left:0;
+		padding: 20px 0 20px 0;
+		background: #f44336; /* Red */
+		color: white;
+		width:40%;
+		margin-left:30%;
+		margin-top:10px;
+		animation-name: example;
+		animation-duration: 3s;  
+		animation-fill-mode: forwards;
+		text-align:center;
+	}
+@keyframes example {
+  from {top: 0px;}
+  to {top: 40px; }
+}
+@media screen and  (max-width:900px){
+	.alert{
+		margin-top:0px;
+		width:70%;	
+		margin-left:15%;
+	}
+}
+@media screen and  (max-width:600px){
+	.alert{
+		margin-top:0px;
+		width:80%;	
+		margin-left:10%;
+		margin-right:10%;
+		padding:10px 0 10px 0;
+		font-size:16px;
+	}
+}
+.fas{
+font-size:25px;
+padding-right:5px;
+}
+</style>
+<div class='alert' id='txt' >
+  <i class="fas fa-exclamation-triangle"></i> <strong>Invalid Email ID or Password.</strong>
+</div>
+<script>
+var x=document.getElementById('txt');
+setTimeout(function(){ x.style.display='none' },5000);
+</script>
+</html>

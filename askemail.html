@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.modal input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  font-size:18px;
+}
+
+/* Add a background color when the inputs get focus */
+.modal input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+a{
+background-color:#f44336;
+padding:12px 0px 12px 0px;
+color:white;
+opacity:0.9;
+outline:none;
+text-align:center;
+}
+button{
+font-family:serif;
+font-size:20px;
+background-color:#4cadaf;
+padding:12px 0px 12px 0px;
+color:white;
+opacity:0.9;
+outline:none;
+border:none;
+}
+a:hover,button:hover{
+opacity:1;
+}
+a,button{
+float:left;
+width:50%;
+cursor:pointer;
+}
+
+/* Add padding to container elements */
+.modal .container1 {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+	
+  position: fixed; /* Stay in place */
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 80px;
+}
+
+/* Modal Content/Box */
+ .modal .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 70%; /* Could be more or less, depending on screen size */
+	
+}
+
+/* Style the horizontal ruler */
+.modal hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+
+/* Clear floats */
+.modal .clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width:900px){
+	.modal-content{
+		width:90%;
+		margin-top:23%;
+		}
+	}
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width:600px){
+	.modal-content{
+		width:93%;
+		margin-top:20%;
+		}
+		button{
+		font-size:20px;
+		}
+}
+</style>
+</head>
+<body>
+<div id="id01" class="modal">
+  <form class="modal-content" action="resetmail.php" method="POST">
+    <div class="container1">
+      <h1>Forgot Password ?</h1>
+      <p>Enter Your Email ID.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+      <div class="clearfix">
+		<a class="cancelbtn" onclick="goback()">Cancel</a>
+        <button type="submit" class="btn1" name="submit-btn">Submit</button>
+      </div>
+    </div>
+  </form>
+ 
+</div>
+<script>
+function goback(){
+
+ window.history.back();
+
+}
+</script>
+</body>
+</html>

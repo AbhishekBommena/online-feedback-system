@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>Feedback</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<script src="https://kit.fontawesome.com/8a3ba5736f.js" crossorigin="anonymous"></script>
+		<base target="_self">
+		<title>FEEDBACK</title>
+	</head>
+	<body>
+		<div id="myModal">
+
+			<div class="modal-content">
+			  
+			  <div class="modal-header">
+				<span class="close">&times;</span>
+			  </div>
+			 
+			  <div class="modal-body">
+				<input type="text" name="college-name">
+				<label>College Name</label>
+			  </div>
+	  
+			  <div class="modal-btn">
+				<input type="button" name="registerbtn" value="Register" class="registerbtn">
+			  </div>
+	  
+			</div>
+		  
+		  </div>
+
+
+		<div class="heading">
+			<h1>Feedback
+			<div class="register">
+				<button id="myBtn">Register</button>
+			</div></h1>
+		</div>
+		<div class="topnav" id="myTopnav">
+			<a href="" class="active"><i class="fa fa-home"></i> Home</a>
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Login &nbsp <i class="fa fa-caret-down"></i></button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="student_login.html"><i class="fa fa-user-graduate"></i> Student</a>
+					<a href="faculty_login.html"><i class="fa fa-chalkboard-teacher"></i> Faculty</a>
+					
+					<a href="#">Admin</a>
+					<!--<a href="#"><i class="fas fa-user-shield"></i> Admin</a>-->
+				</div>
+			</div>
+			<a href="aboutus.html">About Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction2()">
+			<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<div class="container">
+			<div class="quotations">
+				<p><i class="fas fa-quote-left" id="open-quote"></i>I think it&#39s very important to have a feedback loop,<br> 
+				where you&#39re constantly thinking about what you&#39ve done and<br> 
+				how you could be doing it better.&nbsp<i class="fas fa-quote-right" id="close-quote"></i></p>
+		
+		</div>
+			
+		</div>
+		<footer>
+			<p id="pf"><i class="far fa-copyright"></i> All Rights Are Reserved.</p>
+			<div class="social_icons">
+				<label>Join Us:</label>
+				<a href="https://twitter.com/abhishek_040405" class="twitter"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.instagram.com/abhishekbommena/" class="insta"><i class="fab fa-instagram"></i></a>
+			</div>
+		</footer>
+	
+	<script>
+		/* When the user clicks on the button,
+		toggle between hiding and showing the dropdown content */
+		function myFunction() {
+		  document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(e) {
+		  if (!e.target.matches('.dropbtn')) {
+		  var myDropdown = document.getElementById("myDropdown");
+			if (myDropdown.classList.contains('show')) {
+			  myDropdown.classList.remove('show');
+			}
+		  }
+		}
+		function myFunction2() {
+		  var x = document.getElementById("myTopnav");
+		  if (x.className === "topnav") {
+			x.className += " responsive";
+		  } else {
+			x.className = "topnav";
+		  }
+		}
+
+
+
+		var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+	</script>
+</body>
+</html>
